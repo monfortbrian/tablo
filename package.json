@@ -1,0 +1,37 @@
+{
+  "name": "tablo",
+  "version": "1.0.0",
+  "description": "Paste. Style. Ship. Tables that just work in Figma.",
+  "license": "MIT",
+  "author": "Monfort N. Brian <monfortbrian@outlook.com> (https://github.com/monfortbrian)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monfortbrian/tablo"
+  },
+  "bugs": "https://github.com/monfortbrian/tablo/issues",
+  "homepage": "https://github.com/monfortbrian/tablo#readme",
+  "keywords": ["figma", "plugin", "table", "csv", "spreadsheet", "design", "figma-plugin"],
+  "scripts": {
+    "build": "build-figma-plugin --typecheck --minify",
+    "watch": "build-figma-plugin --typecheck --watch",
+    "lint": "eslint src --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@create-figma-plugin/ui": "^3.2.0",
+    "@create-figma-plugin/utilities": "^3.2.0",
+    "preact": "^10.24.3"
+  },
+  "devDependencies": {
+    "@create-figma-plugin/build": "^3.2.0",
+    "@create-figma-plugin/tsconfig": "^3.2.0",
+    "@figma/plugin-typings": "^1.100.0",
+    "typescript": "^5.6.0"
+  },
+  "figma-plugin": {
+    "editorType": ["figma"],
+    "id": "",
+    "name": "Tablo",
+    "main": "src/plugin/main.ts",
+    "ui": "src/ui/index.tsx"
+  }
+}

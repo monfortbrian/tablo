@@ -1,0 +1,7 @@
+node_modules/
+dist/
+build/
+*.js
+!webpack.config.js
+!build-figma-plugin.*.js
+.DS_Store
