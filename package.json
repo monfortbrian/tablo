@@ -1,7 +1,7 @@
 {
-  "name": "tablo",
+  "name": "Tablo - Smart Tables for Real Data",
   "version": "1.0.0",
-  "description": "Paste. Style. Ship. Tables that just work in Figma.",
+  "description": "Tablo turns any raw data into a styled, production-ready table in Figma — in one paste. No column setup. No manual styling. No Lorem Ipsum. Paste anything: CSV, TSV, Excel, markdown, tab-separated, multi-space - Tablo detects the format automatically. Copy from a spreadsheet, a terminal, Notion, or anywhere. It just works.",
   "license": "MIT",
   "author": "Monfort N. Brian <monfortbrian@outlook.com> (https://github.com/monfortbrian)",
   "repository": {
@@ -10,7 +10,15 @@
   },
   "bugs": "https://github.com/monfortbrian/tablo/issues",
   "homepage": "https://github.com/monfortbrian/tablo#readme",
-  "keywords": ["figma", "plugin", "table", "csv", "spreadsheet", "design", "figma-plugin"],
+  "keywords": [
+    "figma",
+    "plugin",
+    "table",
+    "csv",
+    "spreadsheet",
+    "design",
+    "figma-plugin"
+  ],
   "scripts": {
     "build": "build-figma-plugin --typecheck --minify",
     "watch": "build-figma-plugin --typecheck --watch",
@@ -28,7 +36,9 @@
     "typescript": "^5.6.0"
   },
   "figma-plugin": {
-    "editorType": ["figma"],
+    "editorType": [
+      "figma"
+    ],
     "id": "",
     "name": "Tablo",
     "main": "src/plugin/main.ts",
