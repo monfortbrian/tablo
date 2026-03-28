@@ -269,7 +269,7 @@ function parseBlob(raw: string): string[][] | null {
 const CUR = /^[\$€£¥₹₿][\d,]+\.?\d*$|^[\d,]+\.?\d*\s*[\$€£¥₹₿]$/;
 const PCT = /^[\d.]+%$/;
 const NUM = /^-?[\d,]+\.?\d*$/;
-const RNG = /^[\$€£¥]?[\d,.]+\s*[–—-]\s*[\$€£¥]?[\d,.]+/;
+const RNG = /^[\$€£¥]?[\d,.]+\s*[–--]\s*[\$€£¥]?[\d,.]+/;
 const DTE = /^\d{4}-\d{2}-\d{2}|^\d{1,4}[\/\-\.]\d{1,2}[\/\-\.]\d{1,4}$/;
 
 function inferType(vals: string[]): ColumnType {
