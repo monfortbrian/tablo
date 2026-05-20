@@ -1,7 +1,7 @@
 {
   "name": "Tablo - Smart Tables for Real Data",
   "version": "1.1.0",
-  "description": "Tablo turns any raw data into a styled, production-ready table in Figma - in one paste. No column setup. No manual styling. No Lorem Ipsum. Paste anything: CSV, TSV, Excel, markdown, tab-separated, multi-space - Tablo detects the format automatically. Copy from a spreadsheet, a terminal, Notion, or anywhere. It just works.",
+  "description": "Tablo turns any raw data into a styled, production-ready table in Figma - in one paste. No column setup. No manual styling. No Lorem Ipsum.",
   "license": "MIT",
   "author": "Monfort N. Brian <monfortbrian@outlook.com> (https://github.com/monfortbrian)",
   "repository": {
@@ -39,9 +39,18 @@
     "editorType": [
       "figma"
     ],
-    "id": "",
-    "name": "Tablo",
+    "id": "1619858212930918392",
+    "name": "Tablo - Smart Tables for Real Data",
     "main": "src/plugin/main.ts",
-    "ui": "src/ui/index.tsx"
+    "ui": "src/ui/index.tsx",
+    "networkAccess": {
+      "allowedDomains": [
+        "https://docs.google.com",
+        "https://onedrive.live.com",
+        "https://1drv.ms",
+        "https://*.sharepoint.com"
+      ],
+      "reasoning": "Fetches public spreadsheets as CSV from Google Sheets and Excel Online. No user data is sent. Read-only access to files the user explicitly provides a URL for."
+    }
   }
 }
