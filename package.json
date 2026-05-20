@@ -1,7 +1,7 @@
 {
   "name": "Tablo - Smart Tables for Real Data",
-  "version": "1.0.0",
-  "description": "Tablo turns any raw data into a styled, production-ready table in Figma — in one paste. No column setup. No manual styling. No Lorem Ipsum. Paste anything: CSV, TSV, Excel, markdown, tab-separated, multi-space - Tablo detects the format automatically. Copy from a spreadsheet, a terminal, Notion, or anywhere. It just works.",
+  "version": "1.1.0",
+  "description": "Tablo turns any raw data into a styled, production-ready table in Figma - in one paste. No column setup. No manual styling. No Lorem Ipsum. Paste anything: CSV, TSV, Excel, markdown, tab-separated, multi-space - Tablo detects the format automatically. Copy from a spreadsheet, a terminal, Notion, or anywhere. It just works.",
   "license": "MIT",
   "author": "Monfort N. Brian <monfortbrian@outlook.com> (https://github.com/monfortbrian)",
   "repository": {
