@@ -43,6 +43,7 @@
     "name": "Tablo - Smart Tables for Real Data",
     "main": "src/plugin/main.ts",
     "ui": "src/ui/index.tsx",
+    "documentAccess": "dynamic-page",
     "networkAccess": {
       "allowedDomains": [
         "https://docs.google.com",
