@@ -460,19 +460,6 @@ export function App() {
       {panel === 'import' && (
         <div style={{ padding: '12px 10px', flex: 1, display: 'flex', flexDirection: 'column' as const, gap: 8 }}>
 
-          {/* Source badges */}
-          <div style={{ display: 'flex', gap: 5 }}>
-            {[
-              { label: 'Google Sheets', bg: dark ? '#1a3a1a' : '#edf7ed', bd: dark ? '#2d5a2d' : '#b8ddb8', tx: dark ? '#7abf7a' : '#2d6b2d' },
-              { label: 'Excel Online', bg: dark ? '#1a2a3a' : '#edf3fa', bd: dark ? '#2d4a6a' : '#b8cfe8', tx: dark ? '#7aaabf' : '#1a4a7a' },
-            ].map(s => (
-              <span key={s.label} style={{
-                fontSize: '9px', fontWeight: 500, padding: '2px 7px',
-                borderRadius: '3px', background: s.bg,
-                border: `1px solid ${s.bd}`, color: s.tx,
-              }}>{s.label}</span>
-            ))}
-          </div>
 
           {/* URL input */}
           <div>
@@ -519,9 +506,8 @@ export function App() {
           {/* Airtable / Notion hint */}
           <div style={{
             padding: '7px 9px', borderRadius: '3px',
-            background: dark ? '#1a1e2a' : '#f4f6fb',
-            border: `1px solid ${dark ? '#2d3a5a' : '#d0d8ef'}`,
-            fontSize: '9px', color: c.dm, lineHeight: 1.6,
+            background: dark ? '#1e1e1e' : '#f4f6fb',
+            border: `1px solid ${c.bd}`, fontSize: '9px', color: c.dm, lineHeight: 1.7,
           }}>
             <span style={{ fontWeight: 600, color: c.tx }}>Airtable · Notion · any table</span>
             {' - select rows, copy, paste in the Data tab.'}
